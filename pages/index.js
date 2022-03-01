@@ -17,9 +17,9 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub, IoLogoFacebook } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbHackthebox from '../public/images/account-hackthebox.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -36,15 +36,15 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hai, Semuanya!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Ibnu Ubaeydillah
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Pentester | Hackthebox Player</p>
         </Box>
         <Box
           flexShrink={0}
@@ -63,7 +63,7 @@ const Home = () => (
             overflow='hidden'
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/avatar.jpeg"
               alt="Profile image"
               borderRadius='full'
               width="100%"
@@ -75,19 +75,16 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+           Hai Saya Ibnu Ubaeydillah saya seorang Pentester sekaligus sebagai Hakcthebox Player. Situs ini berisi tulisan dan juga merupakan dokumentasi untuk saya pribadi ketika sedang 
+           belajar atau membagikan sesuatu. Jika ingin menghubungi saya, silakan bisa hubungi kontak ini.
+          
+       <Link href="https://web.facebook.com/ibnu.ubaeydillah/" target="_blank">
+                 &nbsp;@ibnuubaeydillah
+            </Link>
+          
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -102,24 +99,18 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+         <BioSection>
+          <BioYear>2022</BioYear>
+          Freelance sebagai Bug Hunter
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2021</BioYear>
+          Selesai program studi jurusan sistem informasi di Universitas Satya Negara Indonesia
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
-        </BioSection>
+          <BioYear>2017</BioYear>
+          Selesai program studi jurusan Desain Komunikasi Visual di SMK Ponpes Manba'ul Ulum 
+        </BioSection> 
       </Section>
 
       <Section delay={0.3}>
@@ -128,14 +119,10 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
+          <Link href="#" target="_blank">
             Photography
           </Link>
-          , Leica, Machine Learning
+          , Reading
         </Paragraph>
       </Section>
 
@@ -145,65 +132,66 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/ibnuuby" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @ibnuuby
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://twitter.com/ibnuuby_" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @ibnuuby
+              </Button>
+            </Link>
+          </ListItem>
+         <ListItem>
+            <Link href="https://facebook.com/ibnuubaeydillah" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoFacebook />}
+              >
+                @ibnuubaeydillah
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://www.linkedin.com/in/ibnuubaeydillah/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @craftzdog (日本語)
+                @ibnuubaeydillah
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
+
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://www.youtube.com/xcore13x"
+            title="Xcore13X"
             thumbnail={thumbYouTube}
           >
             My YouTube channel
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://app.hackthebox.com/profile/751734?fbclid=IwAR1SDOZS1H_MsksDRwggusnG-gMP-MhBFvEvoqEgjGgoR3r9TyQ4dty0KO8"
+            title="Hakcthebox"
+            thumbnail={thumbHackthebox}
           >
-            A Markdown note-taking app
+            Account Hackthebox
           </GridItem>
         </SimpleGrid>
 

@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
+import thumbHackthebox from '../public/images/contents/HTB.png'
 import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
 import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
 import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
@@ -20,9 +20,9 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
+            title="Pengalaman Bermain Hackthebox"
+            thumbnail={thumbHackthebox}
+            href="#"
           />
           <GridItem
             title="My desk setup (Late 2020)"
